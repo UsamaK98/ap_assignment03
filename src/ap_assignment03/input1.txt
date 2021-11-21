@@ -1,0 +1,21 @@
+Advanced Programming Fall 2021
+Assignment # 3
+Due Date: 21st November 2021
+Individual Assignment
+Marks: 100
+Write a command line program that reads files as arguments form the user where each file contains some English text. For each File you are required to make a separate thread and the name of the thread should be same as the filename. All files should be processed in parallel (multi-Threading).
+Your program will be test like this:
+java MyProgram.java vocabulary.txt inputfile1.txt inputfile2.txt ……….
+• Vocabulary file contain words used to form English sentences
+• Input Files contain English sentences
+In this case Your program will create three threads named as vocabulary, input1, and input2 respectively.
+Main thread of the program will work as a console-based UI through which user will interact with your program.
+Description:
+• Your Program displays the number of files and name of the files input.
+• Read the vocabulary file and build a binary search tree from the read file.
+• Read the input files, tokenize each files sentence into words and store them in temporary collection (vector etc.).
+• Match each word of files in binary search tree and if match found, create instances of class word for each matched word.
+• For more than one occurrence of same word increment the frequency of that word.
+• Prompt the user to enter a query and check whether there exists a match file or not.
+• Display the relevant messages, which shows how many words of query exists in files, number of matches found in each file, which file has a proper match in term of numbers matched as well as frequency of words in each file and any appropriate message that you think should be displayed.
+• Do also produce exceptions where applicable. The program should not crash and display relevant messages for each scenario, Robustness of the program must also be guaranteed.
